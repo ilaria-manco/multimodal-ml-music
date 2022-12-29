@@ -13,6 +13,7 @@ for its ongoing development.
     * [Journal and Conference Papers](#journal-and-conference-papers)
 * [Datasets](#datasets)
 * [Workshops, Tutorials & Talks](#workshops-tutorials-&-talks)
+* [Other Projects](#other-projects)
 * [Statistics & Visualisations](#statistics-&-visualisations)
 * [How to Contribute](#how-to-contribute)
 * [Other Resources](#other-resources)
