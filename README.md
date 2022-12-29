@@ -110,25 +110,9 @@ Contributions are welcome!
 Please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file.
 
 
-## Other useful related lists and non-academic resources
-
-
-- [AudioContentAnalysis nearly exhaustive list of music-related datasets](http://www.audiocontentanalysis.org/data-sets/)
-- [Teaching MIR](https://teachingmir.wikispaces.com/Datasets)
-- [Wikipedia's list of datasets for machine learning research](https://en.wikipedia.org/wiki/List_of_datasets_for_machine_learning_research#cite_ref-215)
-- [Datasets for deep learning](http://deeplearning.net/datasets/)
-- [Awesome public datasets](https://github.com/caesar0301/awesome-public-datasets)
-- [Awesome music listening](https://github.com/ybayle/awesome-music-listening)
-
-
- * [Awesome Multimodal Research](https://github.com/Eurus-Holmes/Awesome-Multimodal-Research)
- * [Awesome Multimodal Learning](https://github.com/pliang279/awesome-multimodal-ml)
-
-If you use the information contained in this repository, please let us know!
-
 ## License
 
-You are free to copy, modify, and distribute ***Multimodal Machine Learning for Music (MML4Music)*** with attribution under the terms of the MIT license. See the [LICENSE](./LICENSE) file for details.
+You are free to copy, modify, and distribute ***Multimodal Machine Learning for Music (MML4Music)*** with attribution under the terms of the MIT license. See the [LICENSE](LICENSE) file for details.
 This project is heavily based on [Deep Learning for Music](https://github.com/ybayle/awesome-deep-learning-music) by [Yann Bayle](http://yannbayle.fr/english/index.php) and uses other projects. You may refer to them for appropriate license information:
 
 - [Readme checklist](https://github.com/ddbeck/readme-checklist)
@@ -136,3 +120,5 @@ This project is heavily based on [Deep Learning for Music](https://github.com/yb
 - [Numpy](http://www.numpy.org/) 
 - [Matplotlib](https://matplotlib.org/) 
 - [Bibtexparser](https://github.com/sciunto-org/python-bibtexparser) 
+
+If you use the information contained in this repository, please let us know!
