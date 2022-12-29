@@ -107,7 +107,7 @@ Repeatability is the key to good science. The [Deep Learning for Music](https://
 ## How To Contribute
 
 Contributions are welcome!
-Please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file.
+Please refer to the [contributing.md](contributing.md) file.
 
 
 ## License
