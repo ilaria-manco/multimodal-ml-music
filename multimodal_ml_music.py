@@ -211,7 +211,8 @@ def generate_summary_table(bib):
             else:
                 if (
                     "|  2" not in line 
-                    and "####" not in line 
+                    and "#### Audio-Text" not in line 
+                    and "#### Other" not in line 
                     and "| Year |  Paper Title | Code |" not in line 
                     and "|------|-------------------------------|------|" not in line
                     ):
