@@ -29,4 +29,4 @@ To add a new paper, edit the [Bibtex file](multimodal_ml_music.bib) and add a ne
 To add a new dataset, simply edit the [README.md](README.md) file and add a new row to the dataset table following the same format and adding the required information in each column.
 
 ## Adding other resources
-Other resources can include: models, open-source projects, workshops, learning resources and similar. To add a new entry of this kind, edit the relevant section of the [README.md](README.md) file and add a new item to the list, if it already exists. If your resource doesn't fall under one of the existing categories, you can create a new list.
+Other resources can include: models, open-source projects, workshops, learning resources and similar. To add a new entry of this kind, edit the relevant section of the [README.md](README.md) file and add a new item to the list.
