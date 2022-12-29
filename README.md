@@ -100,9 +100,8 @@ Number of articles per year:
 - 9 tasks investigated. See the list of [tasks](tasks.md).
 Tasks pie chart:
 ![Tasks pie chart](fig/pie_chart_task.png)
-- Only 12 articles (30%) provide their source code.
-Repeatability is the key to good science. The [Deep Learning for Music](https://github.com/ybayle/awesome-deep-learning-music) list created
- by [Yann Bayle](http://yannbayle.fr/english/index.php) has a very useful list of [resources on reproducibility for MIR and ML](reproducibility.md).
+- Only 12 articles (30%) provide their source code (but this may be partly due to missing data). The [Deep Learning for Music](https://github.com/ybayle/awesome-deep-learning-music) list created
+ by [Yann Bayle](http://yannbayle.fr/english/index.php) has a very useful list of [resources on reproducibility for MIR and ML](https://github.com/ybayle/awesome-deep-learning-music/blob/master/reproducibility.md).
 
 
 ## How To Contribute
