@@ -1,0 +1,136 @@
+# List of authors
+
+- Anderson, John
+- Arun Tejasvi Chaganty
+- Arzt, Andreas
+- Avanzini, Federico
+- Balke, Stefan
+- Barbieri, Francesco
+- Barrington, Luke
+- Barthet, Mathieu
+- Benetos, Emmanouil
+- Cai, Tian 
+- Chen, Lei
+- Cho, Kyunghyun
+- Choi, Keunwoo
+- Clark, Stephen
+- Dalton, Jeff
+- Delbouys, R{\'{e}}mi
+- Deshmukh, Soham
+- Dhekane, Eeshan Gunesh
+- Dinesh, Karthik
+- Dixon, Simon
+- Doh, SeungHeon
+- Dorfer, Matthias
+- Drossos, Konstantinos
+- Duan, Zhiyao
+- Eck, Douglas
+- Elizalde, Benjamin
+- Ellis, Daniel P. W.
+- Ellis, Daniel PW
+- Espinosa-Anke, Luis
+- Favory, Xavier
+- Fazekas, Gyorgy
+- Fazekas, Gy{\"o}rgy
+- Fazekas, Gy{\"{o}}rgy
+- Fernando Pereira
+- Fiebrink, Rebecca
+- Filip Radlinski
+- Fried, Ohad
+- Gan, Chuang
+- Ganti, Ravi
+- Goto, Masataka
+- Gouyon, Fabien
+- Grivolla, Jens
+- Guha, Tanaya
+- Ha, Jung Woo
+- Hanjalic, Alan
+- Hao, Weituo
+- He, Di
+- He, Zihao
+- Hennequin, Romain
+- Herrera, Perfecto
+- Hong, Sungeun
+- Huang, Qingqing
+- Im, Woobin
+- Ismail, Mahmoud Al
+- Jansen, Aren
+- Jeon, Byungsoo
+- Jiang, Junyan
+- Kataoka, Hirokatsu
+- Kiela, Douwe
+- Kim, Adrian
+- Kim, Chanju
+- Kim, Dongwon
+- Krisztian Balog
+- Lanckriet, Gert
+- Lartillot, Olivier
+- Laurier, Cyril
+- Lawlor, Aonghus
+- Lee, Joonseok
+- Li, Bochen
+- Li, Judith Yue
+- Liang, Hongru
+- Liem, Cynthia CS
+- Liu, Xinzhao
+- Manco, Ilaria
+- Mandel, Michael I 
+- Mcdermott, Josh
+- Mcfee, Brian
+- Megan Eileen Leszczynski
+- Miotto, Riccardo
+- Montecchio, Nicola
+- Moussallam, Manuel
+- M{\"u}ller, Meinard
+- M{\"{u}}ller, Meinard
+- Nam, Juhan
+- Nieto, Oriol
+- Ntalampiras, Stavros
+- Oramas, Sergio
+- Orio, Nicola
+- Oyama, Keizo
+- Park, Jangyeon
+- Piccoli, Francesco
+- Qiu, Yue
+- Quinton, Elio
+- Raposo, Francisco
+- Ravi Ganti
+- Rizo, David
+- Rossetto, Federico
+- Rouditchenko, Andrew
+- Royo-Letelier, Jimena
+- Saggion, Horacio
+- Sandler, Mark
+- Saurous, Rif A.
+- Schedl, Markus
+- Serra, Xavier
+- Sharma, Gaurav
+- Shu Zhang
+- Simonetta, Federico
+- Song, Xuchen
+- Sordo, Mohamed
+- Sun, Zhe
+- Tang, Suhua
+- Torralba, Antonio
+- Turnbull, Douglas R.
+- Tzanetakis, George
+- Verma, Gaurav
+- Virtanen, Tuomas
+- Vondrick, Carl
+- Wang, Haozheng
+- Wang, Huaming
+- Wang, Jun
+- Watanabe, Kento
+- Wei, Jin-Mao
+- Widmer, Gerhard
+- Won, Minz
+- Xia, Gus
+- Yang, Hyun S
+- Yang, Zhenglu
+- Yazdani, Mehrdad
+- You, Shaodi
+- Yu, Yi
+- Zeng, Donghuo
+- Zhang, Li
+- Zhang, Yixiao
+- Zhao, Hang
