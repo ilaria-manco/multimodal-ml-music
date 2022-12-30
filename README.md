@@ -83,6 +83,7 @@ Summary of papers on multimodal machine learning for music, including the review
 |[MARD]() | Multimodal album reviews dataset | Text, Metadata, Audio descriptors | 65,566 albums and 263,525 reviews |
 |[URMP](http://www2.ece.rochester.edu/projects/air/projects/URMP.html) | Multi-instrument musical pieces of recorded performances | MIDI, Audio, Video | 44 pieces (12.5GB) |
 |[IMAC](https://gaurav22verma.github.io/IMAC_Dataset.html) | Affective correspondences between images and music | Images, Audio | 85,000 images and 3,812 songs |
+|[EmoMV](https://github.com/ivyha010/EmoMV) | Affective Music-Video Correspondence | Audio, Video | 5986 pairs |
 
 ## Workshops, Tutorials & Talks
 
