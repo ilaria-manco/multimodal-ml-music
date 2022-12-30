@@ -9,6 +9,7 @@
 - Barrington, Luke
 - Barthet, Mathieu
 - Benetos, Emmanouil
+- Bogdanov, Dmitry
 - Cai, Tian 
 - Chen, Lei
 - Cho, Kyunghyun
@@ -34,6 +35,7 @@
 - Fazekas, Gy{\"o}rgy
 - Fazekas, Gy{\"{o}}rgy
 - Fernando Pereira
+- Ferraro, Andres
 - Fiebrink, Rebecca
 - Filip Radlinski
 - Fried, Ohad
@@ -62,6 +64,7 @@
 - Kim, Adrian
 - Kim, Chanju
 - Kim, Dongwon
+- Kim, Yuntae
 - Krisztian Balog
 - Lanckriet, Gert
 - Lartillot, Olivier

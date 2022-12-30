@@ -3,6 +3,7 @@
 ### Journals:
 
 - ACM Transactions on Multimedia Computing, Communications and Applications
+- IEEE Signal Processing Letters
 - IEEE Signal Processing Magazine
 - IEEE Transactions on Multimedia
 - Journal of Artificial Intelligence Research
