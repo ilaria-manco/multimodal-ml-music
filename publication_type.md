@@ -19,6 +19,7 @@
 - 20th International Society for Music Information Retrieval Conference
 - 32nd Annual International ACM SIGIR Conference on Research and Development in Information Retrieval
 - CEUR Workshop Proceedings
+- European Conference on Computer Vision
 - ICASSP 2020-2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)
 - ICASSP 2021-2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)
 - ICASSP 2022-2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)
@@ -37,5 +38,6 @@
 - Proceedings of the 23rd International Society for Music Information Retrieval Conference (ISMIR)
 - Proceedings of the 27th International Conference on Computational Linguistics
 - Proceedings of the 2nd Workshop on Deep Learning for Recommender Systems
+- Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition
 - Second Workshop on Interactive Learning for Natural Language Processing at NeurIPS 2022
 - The European Conference on Computer Vision (ECCV)

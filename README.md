@@ -54,6 +54,8 @@ Summary of papers on multimodal machine learning for music, including the review
  |  2021  |  [Multimodal metric learning for tag-based music retrieval](https://arxiv.org/pdf/2010.16030.pdf)  |  [GitHub](https://github.com/minzwon/tag-based-music-retrieval) 
  |  2021  |  [Enriched music representations with multiple cross-modal contrastive learning](https://arxiv.org/abs/2104.00437)  |  [GitHub](https://github.com/andrebola/contrastive-mir-learning) 
  |  2020  |  [Large-Scale Weakly-Supervised Content Embeddings for Music Recommendation and Tagging](https://ieeexplore.ieee.org/abstract/document/9053240)  |  
+ |  2020  |  [Music gesture for visual sound separation](https://openaccess.thecvf.com/content_CVPR_2020/papers/Gan_Music_Gesture_for_Visual_Sound_Separation_CVPR_2020_paper.pdf)  |  
+ |  2020  |  [Foley music: Learning to generate music from videos](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123560732.pdf)  |  
  |  2020  |  [Learning Contextual Tag Embeddings for Cross-Modal Alignment of Audio and Tags](https://arxiv.org/pdf/2010.14171.pdf)  |  [GitHub](https://github.com/xavierfav/ae-w2v-attention) 
  |  2019  |  [Audio-visual embedding for cross-modal music video retrieval through supervised deep CCA](https://arxiv.org/pdf/1908.03744.pdf)  |  
  |  2019  |  [Query-by-Blending: a Music Exploration System Blending Latent Vector Representations of Lyric Word, Song Audio, and Artist](https://archives.ismir.net/ismir2019/paper/000015.pdf)  |  
@@ -95,14 +97,14 @@ Summary of papers on multimodal machine learning for music, including the review
 
 ## Statistics & Visualisations
 
-- 40 papers referenced. See the details in [multimodal_ml_music.bib](multimodal_ml_music.bib).
+- 42 papers referenced. See the details in [multimodal_ml_music.bib](multimodal_ml_music.bib).
 Number of articles per year:
 ![Number of articles per year](fig/articles_per_year.png)
-- If you are applying multimodal ML to music, there are [136 other researchers](authors.md) in your field.
-- 9 tasks investigated. See the list of [tasks](tasks.md).
+- If you are applying multimodal ML to music, there are [139 other researchers](authors.md) in your field.
+- 10 tasks investigated. See the list of [tasks](tasks.md).
 Tasks pie chart:
 ![Tasks pie chart](fig/pie_chart_task.png)
-- Only 13 articles (32%) provide their source code.
+- Only 13 articles (30%) provide their source code.
  by [Yann Bayle](http://yannbayle.fr/english/index.php) has a very useful list of [resources on reproducibility for MIR and ML](https://github.com/ybayle/awesome-deep-learning-music/blob/master/reproducibility.md).
 
 

@@ -12,6 +12,7 @@
 - Bogdanov, Dmitry
 - Cai, Tian 
 - Chen, Lei
+- Chen, Peihao
 - Cho, Kyunghyun
 - Choi, Keunwoo
 - Clark, Stephen
@@ -53,6 +54,7 @@
 - Hennequin, Romain
 - Herrera, Perfecto
 - Hong, Sungeun
+- Huang, Deng
 - Huang, Qingqing
 - Im, Woobin
 - Ismail, Mahmoud Al
@@ -114,6 +116,7 @@
 - Sordo, Mohamed
 - Sun, Zhe
 - Tang, Suhua
+- Tenenbaum, Joshua B
 - Torralba, Antonio
 - Turnbull, Douglas R.
 - Tzanetakis, George
