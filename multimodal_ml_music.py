@@ -167,26 +167,64 @@ def generate_summary_table(bib):
     articles = generate_list_articles(bib)
 
     audio_text_articles = ""
+    audio_image_articles = ""
+    audio_video_articles = ""
+    audio_eeg_articles = ""
+    audio_user_articles = ""
     other_articles = ""
     for article in articles.splitlines():
         if article != "":
             if "Audio-Text" in article.split("|")[-2]:
                 audio_text_articles += (" | ").join(article.split("|")[:-2]) + "\n"
+            elif "Audio-Image" in article.split("|")[-2]:
+                audio_image_articles += (" | ").join(article.split("|")[:-2]) + "\n"
+            elif "Audio-Video" in article.split("|")[-2]:
+                audio_video_articles += (" | ").join(article.split("|")[:-2]) + "\n"
+            elif "Audio-EEG" in article.split("|")[-2]:
+                audio_eeg_articles += (" | ").join(article.split("|")[:-2]) + "\n"
+            elif "Audio-User" in article.split("|")[-2]:
+                audio_user_articles += (" | ").join(article.split("|")[:-2]) + "\n"
             else:
                 other_articles += (" | ").join(article.split("|")[:-2]) + "\n"
-
+    
     readme_fn = "README.md"
     readme = ""
     pasted_at_articles = False
+    pasted_ai_articles = False
+    pasted_av_articles = False
+    pasted_ae_articles = False
+    pasted_au_articles = False
     pasted_other_articles = False
     with open(readme_fn, "r", encoding="utf-8") as filep:
         for line in filep:
             # if "| " in line[:2] and line[2] != " ":
             if not pasted_at_articles and line == "#### Audio-Text\n":
-                    readme += "#### Audio-Text\n"
-                    readme += "| Year |  Paper Title | Code |\n|------|-------------------------------|------|\n"
-                    readme += audio_text_articles
-                    pasted_at_articles = True
+                readme += "#### Audio-Text\n"
+                readme += "| Year |  Paper Title | Code |\n|------|-------------------------------|------|\n"
+                readme += audio_text_articles
+                pasted_at_articles = True
+            elif not pasted_ai_articles and line == "#### Audio-Image\n":
+                readme += "#### Audio-Image\n"
+                readme += "| Year |  Paper Title | Code |\n|------|-------------------------------|------|\n"
+                readme += audio_image_articles
+                pasted_ai_articles = True
+            elif not pasted_av_articles and line == "#### Audio-Video\n":
+                readme += "#### Audio-Video\n"
+                readme += "| Year |  Paper Title | Code |\n|------|-------------------------------|------|\n"
+                readme += audio_video_articles
+                pasted_av_articles = True
+            elif not pasted_ae_articles and line == "#### Audio-EEG\n":
+                readme += "#### Audio-EEG\n"
+                readme += "| Year |  Paper Title | Code |\n|------|-------------------------------|------|\n"
+                readme += audio_eeg_articles
+                pasted_ae_articles = True
+            elif not pasted_au_articles and line == "#### Audio-User\n":
+                readme += "#### Audio-User\n"
+                readme += "| Year |  Paper Title | Code |\n|------|-------------------------------|------|\n"
+                readme += audio_user_articles
+                pasted_au_articles = True
+            else:
+                print("pass this line: ", line)
             if not pasted_other_articles and line == "#### Other\n":
                 readme += "#### Other\n"
                 readme += "| Year |  Paper Title | Code |\n|------|-------------------------------|------|\n"
@@ -212,6 +250,8 @@ def generate_summary_table(bib):
                 if (
                     "|  2" not in line 
                     and "#### Audio-Text" not in line 
+                    and "#### Audio-Video" not in line 
+                    and "#### Audio-Image" not in line 
                     and "#### Other" not in line 
                     and "| Year |  Paper Title | Code |" not in line 
                     and "|------|-------------------------------|------|" not in line

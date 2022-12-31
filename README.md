@@ -37,9 +37,11 @@ Summary of papers on multimodal machine learning for music, including the review
  |  2022  |  [Learning music audio representations via weak language supervision](https://arxiv.org/abs/2112.04214)  |  [GitHub](https://github.com/ilaria-manco/mulap) 
  |  2022  |  [Mulan: A joint embedding of music audio and natural language](https://arxiv.org/abs/2208.12415)  |  
  |  2022  |  [RECAP: Retrieval Augmented Music Captioner](https://arxiv.org/abs/2212.10901v1)  |  
+ |  2022  |  [Data-Efficient Playlist Captioning With Musical and Linguistic Knowledge](https://preview.aclanthology.org/emnlp-22-ingestion/2022.emnlp-main.784)  |  [GitHub](https://github.com/deezer/playntell) 
  |  2022  |  [Clap: Learning audio concepts from natural language supervision](https://arxiv.org/abs/2206.04769)  |  [GitHub](https://github.com/microsoft/CLAP) 
  |  2022  |  [Toward Universal Text-to-Music Retrieval](https://arxiv.org/abs/2211.14558)  |  [GitHub](https://github.com/SeungHeonDoh/music-text-representation) 
  |  2021  |  [MusCaps: Generating Captions for Music Audio](https://arxiv.org/abs/2104.11984)  |  [GitHub](https://github.com/ilaria-manco/muscaps) 
+ |  2021  |  [Music Playlist Title Generation: A Machine-Translation Approach](https://arxiv.org/abs/2110.07354)  |  [GitHub](https://github.com/SeungHeonDoh/ply_title_gen) 
  |  2020  |  [MusicBERT - learning multi-modal representations for music and text](https://www.aclweb.org/anthology/2020.nlp4musa-1.13)  |  
  |  2020  |  [Music autotagging as captioning](https://www.aclweb.org/anthology/2020.nlp4musa-1.14)  |  
  |  2019  |  [Deep cross-modal correlation learning for audio and lyrics in music retrieval](https://arxiv.org/pdf/1711.08976.pdf)  |  
@@ -48,25 +50,41 @@ Summary of papers on multimodal machine learning for music, including the review
  |  2016  |  [Towards Music Captioning: Generating Music Playlist Descriptions](https://arxiv.org/pdf/1608.04868.pdf)  |  
  |  2008  |  [Multimodal Music Mood Classification using Audio and Lyrics](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.182.426&rep=rep1&type=pdf)  |  
 
+#### Audio-Video
+| Year |  Paper Title | Code |
+|------|-------------------------------|------|
+ |  2022  |  [It's Time for Artistic Correspondence in Music and Video](https://arxiv.org/abs/2206.07148)  |  
+ |  2019  |  [Audio-visual embedding for cross-modal music video retrieval through supervised deep CCA](https://arxiv.org/pdf/1908.03744.pdf)  |  
+ |  2019  |  [Query by Video: Cross-Modal Music Retrieval](www.gracenote.com)  |  
+ |  2018  |  [Cbvmr: content-based video-music retrieval using soft intra-modal structure constraint](https://dl.acm.org/doi/abs/10.1145/3206025.3206046)  |  [GitHub](https://github.com/csehong/VM-NET) 
+
+#### Audio-Image
+| Year |  Paper Title | Code |
+|------|-------------------------------|------|
+ |  2020  |  [Tr$\backslash$" aumerai: Dreaming music with stylegan](https://arxiv.org/abs/2102.04680)  |  [GitHub](https://github.com/jdasam/traeumerAI) 
+ |  2019  |  [Learning Affective Correspondence between Music and Image](https://arxiv.org/pdf/1904.00150.pdf)  |  
+ |  2018  |  [The Sound of Pixels](https://arxiv.org/pdf/1804.03160.pdf)  |  [GitHub](https://github.com/hangzhaomit/Sound-of-Pixels) 
+ |  2018  |  [Image generation associated with music data](https://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w49/Qiu_Image_Generation_Associated_CVPR_2018_paper.pdf)  |  
+
+#### Audio-User
+| Year |  Paper Title | Code |
+|------|-------------------------------|------|
+ |  2020  |  [Large-Scale Weakly-Supervised Content Embeddings for Music Recommendation and Tagging](https://ieeexplore.ieee.org/abstract/document/9053240)  |  
+ |  2017  |  [A deep multimodal approach for cold-start music recommendation](https://dl.acm.org/doi/pdf/10.1145/3125486.3125492)  |  [GitHub](https://github.com/sergiooramas/tartarus) 
+#### Audio-User
+
 #### Other
 | Year |  Paper Title | Code |
 |------|-------------------------------|------|
  |  2021  |  [Multimodal metric learning for tag-based music retrieval](https://arxiv.org/pdf/2010.16030.pdf)  |  [GitHub](https://github.com/minzwon/tag-based-music-retrieval) 
- |  2020  |  [Large-Scale Weakly-Supervised Content Embeddings for Music Recommendation and Tagging](https://ieeexplore.ieee.org/abstract/document/9053240)  |  
  |  2020  |  [Learning Contextual Tag Embeddings for Cross-Modal Alignment of Audio and Tags](https://arxiv.org/pdf/2010.14171.pdf)  |  [GitHub](https://github.com/xavierfav/ae-w2v-attention) 
- |  2019  |  [Audio-visual embedding for cross-modal music video retrieval through supervised deep CCA](https://arxiv.org/pdf/1908.03744.pdf)  |  
+ |  2020  |  [Musical word embedding: Bridging the gap between listening contexts and music](https://arxiv.org/abs/2008.01190)  |  
  |  2019  |  [Query-by-Blending: a Music Exploration System Blending Latent Vector Representations of Lyric Word, Song Audio, and Artist](https://archives.ismir.net/ismir2019/paper/000015.pdf)  |  
- |  2019  |  [Learning Affective Correspondence between Music and Image](https://arxiv.org/pdf/1904.00150.pdf)  |  
  |  2019  |  [Multimodal music information processing and retrieval: Survey and future challenges](https://arxiv.org/pdf/1902.05347.pdf)  |  
  |  2019  |  [Cross-Modal Music Retrieval and Applications: An Overview of Key Methodologies](https://arxiv.org/pdf/1902.04397.pdf)  |  
  |  2019  |  [Creating a Multitrack Classical Music Performance Dataset for Multimodal Music Analysis: Challenges, Insights, and Applications](https://arxiv.org/pdf/1612.08727.pdf)  |  
- |  2019  |  [Query by Video: Cross-Modal Music Retrieval](www.gracenote.com)  |  
- |  2018  |  [The Sound of Pixels](https://arxiv.org/pdf/1804.03160.pdf)  |  [GitHub](https://github.com/hangzhaomit/Sound-of-Pixels) 
- |  2018  |  [Image generation associated with music data](https://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w49/Qiu_Image_Generation_Associated_CVPR_2018_paper.pdf)  |  
  |  2018  |  [Multimodal Deep Learning for Music Genre Classification](https://transactions.ismir.net/articles/10.5334/tismir.10/)  |  [GitHub](https://github.com/fvancesco/music_resnet_classification) 
  |  2018  |  [JTAV: Jointly Learning Social Media Content Representation by Fusing Textual, Acoustic, and Visual Features](http://arxiv.org/abs/1806.01483)  |  [GitHub](https://github.com/mengshor/JTAV) 
- |  2018  |  [Cbvmr: content-based video-music retrieval using soft intra-modal structure constraint](https://dl.acm.org/doi/abs/10.1145/3206025.3206046)  |  [GitHub](https://github.com/csehong/VM-NET) 
- |  2017  |  [A deep multimodal approach for cold-start music recommendation](https://dl.acm.org/doi/pdf/10.1145/3125486.3125492)  |  [GitHub](https://github.com/sergiooramas/tartarus) 
  |  2017  |  [Learning neural audio embeddings for grounding semantics in auditory perception](https://www.jair.org/index.php/jair/article/view/11101/26292)  |  
  |  2017  |  [Music emotion recognition via end-To-end multimodal neural networks](http://ceur-ws.org/Vol-1905/recsys2017_poster18.pdf)  |  
  |  2013  |  [Cross-modal Sound Mapping Using Deep Learning](https://www.ohadf.com/papers/FriedFiebrink_NIME2013.pdf)  |  
@@ -93,14 +111,14 @@ Summary of papers on multimodal machine learning for music, including the review
 
 ## Statistics & Visualisations
 
-- 39 papers referenced. See the details in [multimodal_ml_music.bib](multimodal_ml_music.bib).
+- 44 papers referenced. See the details in [multimodal_ml_music.bib](multimodal_ml_music.bib).
 Number of articles per year:
 ![Number of articles per year](fig/articles_per_year.png)
-- If you are applying multimodal ML to music, there are [133 other researchers](authors.md) in your field.
-- 9 tasks investigated. See the list of [tasks](tasks.md).
+- If you are applying multimodal ML to music, there are [144 other researchers](authors.md) in your field.
+- 12 tasks investigated. See the list of [tasks](tasks.md).
 Tasks pie chart:
 ![Tasks pie chart](fig/pie_chart_task.png)
-- Only 12 articles (30%) provide their source code (but this may be partly due to missing data). The [Deep Learning for Music](https://github.com/ybayle/awesome-deep-learning-music) list created
+- Only 15 articles (34%) provide their source code.
  by [Yann Bayle](http://yannbayle.fr/english/index.php) has a very useful list of [resources on reproducibility for MIR and ML](https://github.com/ybayle/awesome-deep-learning-music/blob/master/reproducibility.md).
 
 

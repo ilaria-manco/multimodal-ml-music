@@ -23,6 +23,7 @@
 - ICASSP 2022-2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)
 - ICASSP, IEEE International Conference on Acoustics, Speech and Signal Processing - Proceedings
 - IEEE Conference on Computer Vision and Pattern Recognition Workshops
+- Machine Learning for Media Discovery Workshop, International Conference on Machine Learning (ICML)
 - NIME
 - Proceedings - 2018 IEEE International Symposium on Multimedia, ISM 2018
 - Proceedings - 2019 International Workshop on Multilayer Music Representation and Processing, MMRP 2019
@@ -32,9 +33,13 @@
 - Proceedings of the 1st Workshop on NLP for Music and Audio (NLP4MusA)
 - Proceedings of the 1st international ACM workshop on Music information retrieval with user-centered and multimodal strategies
 - Proceedings of the 2018 ACM on international conference on multimedia retrieval
+- Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing (EMNLP)
 - Proceedings of the 20th International Society for Music Information Retrieval Conference
 - Proceedings of the 23rd International Society for Music Information Retrieval Conference (ISMIR)
 - Proceedings of the 27th International Conference on Computational Linguistics
 - Proceedings of the 2nd Workshop on Deep Learning for Recommender Systems
+- Proceedings of the 2nd Workshop on NLP for Music and Spoken Audio (NLP4MuSA)
+- Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)
 - Second Workshop on Interactive Learning for Natural Language Processing at NeurIPS 2022
 - The European Conference on Computer Vision (ECCV)
+- Workshop on Machine Learning for Creativity and Design, Neural Information Processing Systems (NeurIPS)

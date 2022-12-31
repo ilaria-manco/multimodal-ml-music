@@ -21,6 +21,7 @@
 - Dinesh, Karthik
 - Dixon, Simon
 - Doh, SeungHeon
+- Doh, Seungheon
 - Dorfer, Matthias
 - Drossos, Konstantinos
 - Duan, Zhiyao
@@ -28,6 +29,7 @@
 - Elizalde, Benjamin
 - Ellis, Daniel P. W.
 - Ellis, Daniel PW
+- Epure, Elena
 - Espinosa-Anke, Luis
 - Favory, Xavier
 - Fazekas, Gyorgy
@@ -37,6 +39,7 @@
 - Fiebrink, Rebecca
 - Filip Radlinski
 - Fried, Ohad
+- Gabbolini, Giovanni
 - Gan, Chuang
 - Ganti, Ravi
 - Goto, Masataka
@@ -56,6 +59,7 @@
 - Ismail, Mahmoud Al
 - Jansen, Aren
 - Jeon, Byungsoo
+- Jeong, Dasaem
 - Jiang, Junyan
 - Kataoka, Hirokatsu
 - Kiela, Douwe
@@ -63,11 +67,14 @@
 - Kim, Chanju
 - Kim, Dongwon
 - Krisztian Balog
+- Kwon, Taegyun
 - Lanckriet, Gert
 - Lartillot, Olivier
 - Laurier, Cyril
 - Lawlor, Aonghus
+- Lee, Jongpil
 - Lee, Joonseok
+- Lee, Junwon
 - Li, Bochen
 - Li, Judith Yue
 - Liang, Hongru
@@ -90,6 +97,7 @@
 - Orio, Nicola
 - Oyama, Keizo
 - Park, Jangyeon
+- Park, Tae Hong
 - Piccoli, Francesco
 - Qiu, Yue
 - Quinton, Elio
@@ -99,7 +107,9 @@
 - Rossetto, Federico
 - Rouditchenko, Andrew
 - Royo-Letelier, Jimena
+- Russell, Bryan
 - Saggion, Horacio
+- Salamon, Justin
 - Sandler, Mark
 - Saurous, Rif A.
 - Schedl, Markus
@@ -110,6 +120,7 @@
 - Song, Xuchen
 - Sordo, Mohamed
 - Sun, Zhe
+- Sur{\'\i}s, D{\'\i}dac
 - Tang, Suhua
 - Torralba, Antonio
 - Turnbull, Douglas R.

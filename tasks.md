@@ -8,4 +8,7 @@
 - music recommendation
 - music retrieval
 - music video retrieval
+- music-to-image synthesis
+- music-to-video retrieval
+- playlist captioning
 - source separation
