@@ -71,7 +71,7 @@ Summary of papers on multimodal machine learning for music, including the review
 |------|-------------------------------|------|
  |  2020  |  [Large-Scale Weakly-Supervised Content Embeddings for Music Recommendation and Tagging](https://ieeexplore.ieee.org/abstract/document/9053240)  |  
  |  2017  |  [A deep multimodal approach for cold-start music recommendation](https://dl.acm.org/doi/pdf/10.1145/3125486.3125492)  |  [GitHub](https://github.com/sergiooramas/tartarus) 
-#### Audio-User
+
 
 #### Other
 | Year |  Paper Title | Code |

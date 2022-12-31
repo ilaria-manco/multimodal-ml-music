@@ -213,18 +213,14 @@ def generate_summary_table(bib):
                 readme += "| Year |  Paper Title | Code |\n|------|-------------------------------|------|\n"
                 readme += audio_video_articles
                 pasted_av_articles = True
-            elif not pasted_ae_articles and line == "#### Audio-EEG\n":
-                readme += "#### Audio-EEG\n"
-                readme += "| Year |  Paper Title | Code |\n|------|-------------------------------|------|\n"
-                readme += audio_eeg_articles
-                pasted_ae_articles = True
             elif not pasted_au_articles and line == "#### Audio-User\n":
                 readme += "#### Audio-User\n"
                 readme += "| Year |  Paper Title | Code |\n|------|-------------------------------|------|\n"
                 readme += audio_user_articles
                 pasted_au_articles = True
-            else:
-                print("pass this line: ", line)
+            
+
+            # others
             if not pasted_other_articles and line == "#### Other\n":
                 readme += "#### Other\n"
                 readme += "| Year |  Paper Title | Code |\n|------|-------------------------------|------|\n"
@@ -252,6 +248,7 @@ def generate_summary_table(bib):
                     and "#### Audio-Text" not in line 
                     and "#### Audio-Video" not in line 
                     and "#### Audio-Image" not in line 
+                    and "#### Audio-User" not in line 
                     and "#### Other" not in line 
                     and "| Year |  Paper Title | Code |" not in line 
                     and "|------|-------------------------------|------|" not in line
