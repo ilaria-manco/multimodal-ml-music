@@ -16,8 +16,8 @@ def write_bib(bib_database, filen="multimodal_ml_music.bib"):
     Write the items stored in bib_database into filen
     """
     writer = BibTexWriter()
-    writer.indent = '  '
-    writer.order_entries_by = ('year', "author")
+    writer.indent = "  "
+    writer.order_entries_by = ("year", "author")
     with open(filen, "w", encoding="utf-8") as bibfile:
         bibfile.write(writer.write(bib_database))
 
@@ -49,18 +49,18 @@ def articles_per_year(bib):
     """
     years = []
     for entry in bib:
-        year = int(entry['year'])
+        year = int(entry["year"])
         years.append(year)
 
-    plt.xlabel('Year')
-    plt.ylabel('Number of articles on Multimodal ML for Music')
+    plt.xlabel("Year")
+    plt.ylabel("Number of articles on Multimodal ML for Music")
     year_bins = np.arange(min(years), max(years) + 2.0, 1.0)
     plt.hist(years, bins=year_bins, color="#401153", align="left")
     axe = plt.gca()
-    axe.spines['right'].set_color('none')
-    axe.spines['top'].set_color('none')
-    axe.xaxis.set_ticks_position('bottom')
-    axe.yaxis.set_ticks_position('left')
+    axe.spines["right"].set_color("none")
+    axe.spines["top"].set_color("none")
+    axe.xaxis.set_ticks_position("bottom")
+    axe.yaxis.set_ticks_position("left")
     fig_fn = "fig/articles_per_year.png"
     plt.savefig(fig_fn, dpi=200)
     print("Fig. with number of articles per year saved in", fig_fn)
@@ -94,7 +94,7 @@ def get_authors(bib):
     """
     authors = []
     for entry in bib:
-        for author in entry['author'].split(" and "):
+        for author in entry["author"].split(" and "):
             authors.append(author)
     authors = sorted(set(authors))
     nb_authors = len(authors)
@@ -144,7 +144,7 @@ def generate_list_articles(bib):
         else:
             print("ERROR: Missing title for ", entry)
             sys.exit()
-    
+
     # articles += "|------|-------------------------------|------|\n| Year |  Paper Title | Code |"
     sorted_articles = ""
     for line in sorted(articles.split("\n"), key=lambda line: line.split("|")[0])[::-1]:
@@ -158,7 +158,7 @@ def generate_summary_table(bib):
     """
     nb_articles = get_nb_articles(bib)
     nb_repro = get_reproducibility(bib)
-    percent_repro = str(int(nb_repro * 100. / nb_articles))
+    percent_repro = str(int(nb_repro * 100.0 / nb_articles))
     nb_articles = str(nb_articles)
     nb_repro = str(nb_repro)
     nb_authors = str(get_authors(bib) - 1)
@@ -167,26 +167,59 @@ def generate_summary_table(bib):
     articles = generate_list_articles(bib)
 
     audio_text_articles = ""
+    audio_image_articles = ""
+    audio_video_articles = ""
+    audio_eeg_articles = ""
+    audio_user_articles = ""
     other_articles = ""
     for article in articles.splitlines():
         if article != "":
             if "Audio-Text" in article.split("|")[-2]:
                 audio_text_articles += (" | ").join(article.split("|")[:-2]) + "\n"
+            elif "Audio-Image" in article.split("|")[-2]:
+                audio_image_articles += (" | ").join(article.split("|")[:-2]) + "\n"
+            elif "Audio-Video" in article.split("|")[-2]:
+                audio_video_articles += (" | ").join(article.split("|")[:-2]) + "\n"
+            elif "Audio-EEG" in article.split("|")[-2]:
+                audio_eeg_articles += (" | ").join(article.split("|")[:-2]) + "\n"
+            elif "Audio-User" in article.split("|")[-2]:
+                audio_user_articles += (" | ").join(article.split("|")[:-2]) + "\n"
             else:
                 other_articles += (" | ").join(article.split("|")[:-2]) + "\n"
 
     readme_fn = "README.md"
     readme = ""
     pasted_at_articles = False
+    pasted_ai_articles = False
+    pasted_av_articles = False
+    pasted_ae_articles = False
+    pasted_au_articles = False
     pasted_other_articles = False
     with open(readme_fn, "r", encoding="utf-8") as filep:
         for line in filep:
             # if "| " in line[:2] and line[2] != " ":
             if not pasted_at_articles and line == "#### Audio-Text\n":
-                    readme += "#### Audio-Text\n"
-                    readme += "| Year |  Paper Title | Code |\n|------|-------------------------------|------|\n"
-                    readme += audio_text_articles
-                    pasted_at_articles = True
+                readme += "#### Audio-Text\n"
+                readme += "| Year |  Paper Title | Code |\n|------|-------------------------------|------|\n"
+                readme += audio_text_articles
+                pasted_at_articles = True
+            elif not pasted_ai_articles and line == "#### Audio-Image\n":
+                readme += "#### Audio-Image\n"
+                readme += "| Year |  Paper Title | Code |\n|------|-------------------------------|------|\n"
+                readme += audio_image_articles
+                pasted_ai_articles = True
+            elif not pasted_av_articles and line == "#### Audio-Video\n":
+                readme += "#### Audio-Video\n"
+                readme += "| Year |  Paper Title | Code |\n|------|-------------------------------|------|\n"
+                readme += audio_video_articles
+                pasted_av_articles = True
+            elif not pasted_au_articles and line == "#### Audio-User\n":
+                readme += "#### Audio-User\n"
+                readme += "| Year |  Paper Title | Code |\n|------|-------------------------------|------|\n"
+                readme += audio_user_articles
+                pasted_au_articles = True
+
+            # others
             if not pasted_other_articles and line == "#### Other\n":
                 readme += "#### Other\n"
                 readme += "| Year |  Paper Title | Code |\n|------|-------------------------------|------|\n"
@@ -210,12 +243,15 @@ def generate_summary_table(bib):
                 readme += "%) provide their source code.\n"
             else:
                 if (
-                    "|  2" not in line 
-                    and "#### Audio-Text" not in line 
-                    and "#### Other" not in line 
-                    and "| Year |  Paper Title | Code |" not in line 
+                    "|  2" not in line
+                    and "#### Audio-Text" not in line
+                    and "#### Audio-Video" not in line
+                    and "#### Audio-Image" not in line
+                    and "#### Audio-User" not in line
+                    and "#### Other" not in line
+                    and "| Year |  Paper Title | Code |" not in line
                     and "|------|-------------------------------|------|" not in line
-                    ):
+                ):
                     readme += line
     with open(readme_fn, "w", encoding="utf-8") as filep:
         filep.write(readme)
@@ -226,20 +262,31 @@ def validate_field(field_name):
     """
     Assert the validity of the field's name
     """
-    fields = ["task", "dataset", "author", "link", "title", "year", "journal", "code", "ENTRYTYPE"]
+    fields = [
+        "task",
+        "dataset",
+        "author",
+        "link",
+        "title",
+        "year",
+        "journal",
+        "code",
+        "ENTRYTYPE",
+    ]
     error_str = "Invalid field provided: " + field_name + ". "
-    error_str += "Valid fields: " + '[%s]' % ', '.join(map(str, fields))
+    error_str += "Valid fields: " + "[%s]" % ", ".join(map(str, fields))
     assert field_name in fields, error_str
 
+
 def make_autopct(values):
-    """Wrapper for the custom values to display in the pie chart slices
-    """
+    """Wrapper for the custom values to display in the pie chart slices"""
+
     def my_autopct(pct):
-        """Define custom value to print in pie chart
-        """
+        """Define custom value to print in pie chart"""
         total = sum(values)
-        val = int(round(pct*total/100.0))
-        return '{p:.1f}%  ({v:d})'.format(p=pct, v=val)
+        val = int(round(pct * total / 100.0))
+        return "{p:.1f}%  ({v:d})".format(p=pct, v=val)
+
     return my_autopct
 
 
@@ -271,8 +318,17 @@ def pie_chart(items, field_name, max_nb_slice=8):
         labels = np.array(new_labels)
         sizes = np.array(new_sizes)
 
-    colors = ["gold", "yellowgreen", "lightcoral", "lightskyblue",
-              "red", "green", "bisque", "lightgrey", "#555555"]
+    colors = [
+        "gold",
+        "yellowgreen",
+        "lightcoral",
+        "lightskyblue",
+        "red",
+        "green",
+        "bisque",
+        "lightgrey",
+        "#555555",
+    ]
 
     tmp_labels = []
     for label in labels:
@@ -282,13 +338,19 @@ def pie_chart(items, field_name, max_nb_slice=8):
     labels = np.array(tmp_labels)
 
     # h = plt.pie(sizes, labels=labels, colors=colors, shadow=False,
-    plt.pie(sizes, labels=labels, colors=colors, shadow=False,
-            startangle=90, autopct=make_autopct(sizes))
+    plt.pie(
+        sizes,
+        labels=labels,
+        colors=colors,
+        shadow=False,
+        startangle=90,
+        autopct=make_autopct(sizes),
+    )
 
     # Display the legend
     # leg = plt.legend(h[0], labels, bbox_to_anchor=(0.08, 0.4))
     # leg.draw_frame(False)
-    plt.axis('equal')
+    plt.axis("equal")
     fig_fn = "fig/pie_chart_" + field_name + ".png"
     plt.savefig(fig_fn, dpi=200)
     plt.close()
@@ -309,7 +371,9 @@ def get_field(bib, field_name):
                 fields.append(field)
         else:
             nb_article_missing += 1
-    print(str(nb_article_missing) + " entries are missing the " + field_name + " field.")
+    print(
+        str(nb_article_missing) + " entries are missing the " + field_name + " field."
+    )
     nb_fields = len(set(fields))
     print(str(nb_fields) + " unique " + field_name + ".")
 
@@ -340,10 +404,30 @@ def create_table(bib, outfilen="multimodal_ml_music.tsv"):
 
     print("Available fields:")
     print(set(fields))
-    fields = ["year", "ENTRYTYPE", "title", "author", "link", "code", "task",
-              "reproducible", "dataset", "framework", "architecture", "dropout",
-              "batch", "epochs", "dataaugmentation", "input", "dimension",
-              "activation", "loss", "learningrate", "optimizer", "gpu"]
+    fields = [
+        "year",
+        "ENTRYTYPE",
+        "title",
+        "author",
+        "link",
+        "code",
+        "task",
+        "reproducible",
+        "dataset",
+        "framework",
+        "architecture",
+        "dropout",
+        "batch",
+        "epochs",
+        "dataaugmentation",
+        "input",
+        "dimension",
+        "activation",
+        "loss",
+        "learningrate",
+        "optimizer",
+        "gpu",
+    ]
     print("Fields taken in order (in this order):")
     print(fields)
 
@@ -363,8 +447,7 @@ def create_table(bib, outfilen="multimodal_ml_music.tsv"):
 
 
 def where_published(bib):
-    """Display insights on where the articles have been published
-    """
+    """Display insights on where the articles have been published"""
     journals = []
     conf = []
     for entry in bib:
